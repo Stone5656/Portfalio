@@ -11,7 +11,7 @@ export default function SearchBar({ onSubmit }) {
     setQuery(e.target.value);
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className={styles.flexContainer}>
       <input
         type="text"
         value={query}

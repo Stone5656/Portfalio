@@ -1,11 +1,12 @@
-import Navlink from "../navlink/navlink"
+import Navlink from "@/components/navlink/navlink";
+import styles from "./navbar.module.css"
 
 export default function Navbar({  }){
-    return(
-        <ul>
-            <Navlink url="/">Top</Navlink>
-            <Navlink url="/about">About</Navlink>
-            <Navlink url="/blog/">Blog</Navlink>
-        </ul>
-    )
+    return (
+      <ul className={styles.flexContainer}>
+        <Navlink url="/" text="Top"></Navlink>
+        <Navlink url="/about" text="About"></Navlink>
+        <Navlink url="/blog/" text="Blog"></Navlink>
+      </ul>
+    );
 }

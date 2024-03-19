@@ -1,0 +1,6 @@
+.flex{
+    display: flex;
+    flex-direction: row;
+    padding: 0 auto;
+    background-color: #7d7d7d;
+}
